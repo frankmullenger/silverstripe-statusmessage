@@ -3,7 +3,7 @@ SilverStripe Status Message Module
 
 Maintainer Contacts
 -------------------
-*  Frank Mullenger (frankmullenger_AT_gmail(dot)com)
+*  Frank Mullenger 
    [My Blog](http://deadlytechnology.com)
 
 Requirements
