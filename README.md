@@ -22,8 +22,8 @@ Installation Instructions
 
 Usage Overview
 --------------
-1. Set a status message in a controller or similar e.g: StatusMessage::set(StatusMessage::STATUS_SUCCESS, "Here is some message");
-2. Get a status message out of the session in a template e.g: <% include StatusMessage %>
+1. Set a status message in a controller or similar e.g: `StatusMessage::set(StatusMessage::STATUS_SUCCESS, "Here is some message");`
+2. Get a status message out of the session in a template e.g: `<% include StatusMessage %>`
 
 Known Issues
 ------------

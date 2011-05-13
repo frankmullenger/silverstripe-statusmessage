@@ -5,9 +5,9 @@ class StatusMessage extends Extension {
    * Types of status message
    */
   const STATUS_SUCCESS = 'success';
-  const STATUS_INFO = 'info';
+  const STATUS_INFO    = 'info';
   const STATUS_WARNING = 'warning';
-  const STATUS_ERROR = 'error';
+  const STATUS_ERROR   = 'error';
    
 	/**
    * Get status message from Session
