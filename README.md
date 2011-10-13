@@ -22,8 +22,15 @@ Installation Instructions
 
 Usage Overview
 --------------
+
+Session
 1. Set a status message in a controller or similar e.g: `StatusMessage::set(StatusMessage::STATUS_SUCCESS, "Here is some message");`
 2. Get a status message out of the session in a template e.g: `<% include StatusMessage %>`
+
+URL
+When redirecting have to pass the status message in the URL rather than the Session. 
+1. Set the message as above.
+2. Append the status message to the GET string e.g: Director::redirect(Director::absoluteBaseURL() . $this->Link() . '?' . StatusMessage::query_string());
 
 Known Issues
 ------------

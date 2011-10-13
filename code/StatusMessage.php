@@ -56,7 +56,7 @@ class StatusMessage extends Extension {
    * 
    * E.g: 
    * StatusMessage::set(StatusMessage::STATUS_SUCCESS, 'Some message.');
-   * Director::redirect(Director::absoluteBaseURL() . $this->Link() . '?' .StatusMessage::query_string());
+   * Director::redirect(Director::absoluteBaseURL() . $this->Link() . '?' . StatusMessage::query_string());
    * 
    * @return String Query string for GET seperated with & without a '?' prefix
    */
