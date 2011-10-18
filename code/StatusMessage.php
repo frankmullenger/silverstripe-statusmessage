@@ -27,13 +27,15 @@ class StatusMessage extends Extension {
     }
     
     //Get status from GET vars
-    $curr = Controller::curr();
-    $request = ($curr) ? $curr->getRequest() : null;
-    if ($request && $request->getVar('ActionMessage') && $request->getVar('ActionStatus')) {
-      return new ArrayData(array(
-      	'Message' => $request->getVar('ActionMessage'), 
-      	'Status' => $request->getVar('ActionStatus')
-      ));
+    if (Controller::has_curr()) {
+      $curr = Controller::curr();
+      $request = ($curr) ? $curr->getRequest() : null;
+      if ($request && $request->getVar('ActionMessage') && $request->getVar('ActionStatus')) {
+        return new ArrayData(array(
+        	'Message' => $request->getVar('ActionMessage'), 
+        	'Status' => $request->getVar('ActionStatus')
+        ));
+      }
     }
     
     return false;
